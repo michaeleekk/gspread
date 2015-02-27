@@ -46,7 +46,7 @@ class HTTPSession(object):
             data = urlencode(data)
 
         if data is not None:
-            data = data.encode()
+            data = data.encode('utf-8')
 
         # If we have data and Content-Type is not set, set it...
         if data and not headers.get('Content-Type', None):

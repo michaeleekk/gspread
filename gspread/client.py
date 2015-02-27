@@ -60,7 +60,7 @@ class Client(object):
         return None
 
     def _add_xml_header(self, data):
-        return "<?xml version='1.0' encoding='UTF-8'?>%s" % data.decode()
+        return "<?xml version='1.0' encoding='UTF-8'?>%s" % data
 
     def login(self):
         """Authorize client using ClientLogin protocol.
